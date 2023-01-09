@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui1/data.dart';
-import 'package:ui1/widgets/cardDetails.dart';
+import 'package:ui1/widgets/carddetails.dart';
 
 class CardSection extends StatelessWidget {
   const CardSection({super.key});
@@ -27,32 +27,6 @@ class CardSection extends StatelessWidget {
                       color: primaryColor,
                       boxShadow: customShadow,
                       borderRadius: BorderRadius.circular(20)),
-                  child: Stack(
-                    children: [
-                      Positioned.fill(
-                        top: 150,
-                        bottom: -200,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              boxShadow: customShadow,
-                              shape: BoxShape.circle,
-                              color: Colors.white38),
-                        ),
-                      ),
-                      Positioned.fill(
-                        left: -400,
-                        top: -100,
-                        bottom: -100,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              boxShadow: customShadow,
-                              shape: BoxShape.circle,
-                              color: Colors.white24),
-                        ),
-                      ),
-                      CardDetails(),
-                    ],
-                  ),
                 );
               }),
         ),

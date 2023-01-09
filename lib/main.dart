@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui1/data.dart';
-import 'package:ui1/widgets/cardSection.dart';
+import 'package:ui1/widgets/cardsection.dart';
 import 'package:ui1/widgets/header.dart';
 
 void main() {
@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
       backgroundColor: primaryColor,
       body: Column(
         children: [
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Container(
             height: 120,
             child: WalletHeader(),
